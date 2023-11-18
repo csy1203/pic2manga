@@ -9,7 +9,7 @@ def image2pdf(sub_folder_path, pdf_filename):
 
     # 图片文件名列表
     image_files = os.listdir(sub_folder_path)
-    image_files = list(filter(lambda x: x.lower().endswith(".jpg") or x.lower().endswith(".jpeg"), image_files))
+    image_files = list(filter(lambda x: x.lower().endswith(".jpg") or x.lower().endswith(".jpeg") or x.lower().endswith(".png"), image_files))
     image_files.sort()
 
     # 打开一个PDF文件，并设置页面大小（可以根据需要调整）
